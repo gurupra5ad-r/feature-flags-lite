@@ -3,8 +3,8 @@
   "private": true,
   "workspaces": ["app","server"],
   "scripts": {
-    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix app run dev\"",
-    "ci": "npm -ws run test || true"
+    "dev": "concurrently \"yarn workspace server dev\" \"yarn workspace app dev\"",
+    "ci": "yarn workspaces foreach -At run test || true"
   },
   "devDependencies": { "concurrently": "^9.0.0" }
 }
