@@ -1,0 +1,13 @@
+{
+  "name": "flags-server",
+  "type": "module",
+  "private": true,
+  "scripts": { "dev": "node src/index.js" },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.4.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
